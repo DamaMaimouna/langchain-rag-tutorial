@@ -1,9 +1,13 @@
 import argparse
 from dataclasses import dataclass
 from langchain.vectorstores.chroma import Chroma
-from langchain.embeddings import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
+#from langchain.embeddings import OpenAIEmbeddings
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
+import os
+
+os.environ['OPENAI_API_KEY']  = "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"
 
 CHROMA_PATH = "chroma"
 

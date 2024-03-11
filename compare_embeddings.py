@@ -1,6 +1,9 @@
-from langchain.embeddings import OpenAIEmbeddings
+#from langchain.embeddings import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from langchain.evaluation import load_evaluator
+import os
 
+os.environ['OPENAI_API_KEY']  = "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"
 
 def main():
     # Get embedding for a word.
